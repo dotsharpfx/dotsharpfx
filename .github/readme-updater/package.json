@@ -1,0 +1,11 @@
+{
+  "name": "github-profile-updater",
+  "version": "1.0.0",
+  "description": "Auto-updates README with latest blog posts",
+  "main": "update-readme.js",
+  "type": "commonjs",
+  "dependencies": {
+    "fast-xml-parser": "^4.3.5",
+    "node-fetch": "^2.6.11"
+  }
+}
