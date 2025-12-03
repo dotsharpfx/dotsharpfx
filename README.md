@@ -3,7 +3,7 @@
 ## 👋 Hi, I'm Vijay Karajgikar
 **Senior Software Engineer • .NET | C# | Microservices | EF Core**
 
-👋 Hey! I'm Vyas, a Senior Software Engineer who loves building fast, secure, and scalable applications with .NET, C#, EF Core, and microservices.
+👋 Hey! I'm Vijay Karajgikar, a Senior Software Engineer who loves building fast, secure, and scalable applications with .NET, C#, EF Core, and microservices.
 I enjoy turning complex problems into simple, maintainable solutions — whether it's tuning EF Core performance, designing distributed systems, or improving CI/CD pipelines with GitHub Actions.
 
 💡 I write about .NET, C# best practices, EF Core internals, microservices architecture, and real-world backend engineering on Dev.to & Hashnode — sharing things I learn while breaking and fixing stuff in production 😄
