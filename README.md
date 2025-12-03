@@ -1,7 +1,6 @@
 ![banner](./assets/banner.svg)
 
-## 👋 Hi, I'm Vijay Karajgikar
-**Senior Software Engineer • .NET | C# | Microservices | EF Core**
+--- 
 
 👋 Hey! I'm Vijay Karajgikar, a Senior Software Engineer who loves building fast, secure, and scalable applications with .NET, C#, EF Core, and microservices.
 I enjoy turning complex problems into simple, maintainable solutions — whether it's tuning EF Core performance, designing distributed systems, or improving CI/CD pipelines with GitHub Actions.

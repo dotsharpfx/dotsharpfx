@@ -1,126 +1,53 @@
-<svg width="100%" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-  <!-- ========== DEFINITIONS ========== -->
-  <defs>
-    <!-- Cyan neon glow -->
-    <filter id="neon-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="10" result="glow"/>
-      <feMerge>
-        <feMergeNode in="glow"/>
-        <feMergeNode in="glow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-
-    <!-- Background gradient -->
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="260">
-      <stop offset="0%" stop-color="#05070C">
-        <animate attributeName="stop-color" values="#05070C; #0A0F18; #05070C" dur="10s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#0E141C">
-        <animate attributeName="stop-color" values="#0E141C; #0A1220; #0E141C" dur="10s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-
-    <!-- Typing effect -->
-    <style>
-      .typing {
-        font-family: "Segoe UI", sans-serif;
-        font-size: 22px;
-        fill: #d3e8ff;
-        width: 0ch;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typing 4s steps(40) 1s forwards, blink .8s step-end infinite;
-      }
-
-      @keyframes typing { from { width: 0ch; } to { width: 42ch; } }
-      @keyframes blink { 50% { opacity: 0.2; } }
-
-      @keyframes wave {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(-60px); }
-        100% { transform: translateX(0); }
-      }
-
-      @keyframes wave2 {
-        0% { transform: translateX(0); }
-        50% { transform: translateX(-25px); }
-        100% { transform: translateX(0); }
-      }
-
-      @keyframes float {
-        0% { transform: translateY(0); opacity: .65; }
-        50% { transform: translateY(-18px); opacity: 1; }
-        100% { transform: translateY(0); opacity: .65; }
-      }
-    </style>
-  </defs>
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
 
   <!-- Background -->
-  <rect width="1200" height="260" fill="url(#bg)" />
+  <rect width="1200" height="260" fill="#0d1117"/>
 
-  <!-- ========== PARTICLES ========== -->
-  <g fill="#67e8f9" fill-opacity="0.18">
-    <!-- 40 floating particles (cyan) -->
-    <circle cx="80" cy="60" r="3" style="animation: float 6s ease-in-out infinite; animation-delay:-1s"/>
-    <circle cx="150" cy="200" r="4" style="animation: float 7s ease-in-out infinite; animation-delay:-3s"/>
-    <circle cx="230" cy="100" r="2" style="animation: float 5s ease-in-out infinite; animation-delay:-2s"/>
-    <circle cx="310" cy="160" r="3" style="animation: float 8s ease-in-out infinite; animation-delay:-5s"/>
-    <circle cx="400" cy="80" r="4" style="animation: float 6s ease-in-out infinite; animation-delay:-1s"/>
-    <circle cx="460" cy="180" r="3" style="animation: float 7s ease-in-out infinite; animation-delay:-4s"/>
-    <circle cx="520" cy="120" r="2" style="animation: float 5s ease-in-out infinite; animation-delay:-1s"/>
-    <circle cx="600" cy="200" r="5" style="animation: float 9s ease-in-out infinite; animation-delay:-3s"/>
-    <circle cx="650" cy="70"  r="3" style="animation: float 6s ease-in-out infinite; animation-delay:-2s"/>
-    <circle cx="720" cy="140" r="4" style="animation: float 7s ease-in-out infinite; animation-delay:-1s"/>
-    <circle cx="780" cy="60"  r="3" style="animation: float 6s ease-in-out infinite; animation-delay:-4s"/>
-    <circle cx="840" cy="210" r="4" style="animation: float 8s ease-in-out infinite; animation-delay:-2s"/>
-    <circle cx="900" cy="110" r="2" style="animation: float 5s ease-in-out infinite; animation-delay:-1s"/>
-    <circle cx="960" cy="180" r="3" style="animation: float 7s ease-in-out infinite; animation-delay:-5s"/>
-    <circle cx="1030" cy="130" r="4" style="animation: float 6s ease-in-out infinite; animation-delay:-3s"/>
-    <circle cx="1100" cy="70"  r="3" style="animation: float 6s ease-in-out infinite; animation-delay:-1s"/>
-    <circle cx="1170" cy="200" r="2" style="animation: float 5s ease-in-out infinite; animation-delay:-2s"/>
-
-    <!-- 20 more -->
-    <circle cx="90" cy="150" r="2" style="animation: float 6s infinite; animation-delay:-2s"/>
-    <circle cx="180" cy="40" r="3" style="animation: float 7s infinite; animation-delay:-1s"/>
-    <circle cx="260" cy="220" r="4" style="animation: float 8s infinite; animation-delay:-4s"/>
-    <circle cx="330" cy="130" r="3" style="animation: float 6s infinite; animation-delay:-3s"/>
-    <circle cx="410" cy="45" r="2" style="animation: float 7s infinite; animation-delay:-2s"/>
-    <circle cx="480" cy="230" r="4" style="animation: float 8s infinite; animation-delay:-6s"/>
-    <circle cx="560" cy="90" r="3" style="animation: float 6s infinite; animation-delay:-1s"/>
-    <circle cx="630" cy="210" r="4" style="animation: float 7s infinite; animation-delay:-5s"/>
-    <circle cx="700" cy="100" r="2" style="animation: float 5s infinite; animation-delay:-2s"/>
-    <circle cx="770" cy="220" r="4" style="animation: float 9s infinite; animation-delay:-3s"/>
-    <circle cx="840" cy="40" r="3" style="animation: float 6s infinite; animation-delay:-1s"/>
-    <circle cx="910" cy="200" r="2" style="animation: float 7s infinite; animation-delay:-4s"/>
-    <circle cx="980" cy="90" r="3" style="animation: float 6s infinite; animation-delay:-2s"/>
-    <circle cx="1050" cy="220" r="4" style="animation: float 8s infinite; animation-delay:-6s"/>
-    <circle cx="1120" cy="120" r="3" style="animation: float 7s infinite; animation-delay:-1s"/>
-    <circle cx="1180" cy="40" r="2" style="animation: float 5s infinite; animation-delay:-2s"/>
+  <!-- Particles -->
+  <g fill="#1e3a5f">
+    <circle cx="1120" cy="40" r="3"/>
+    <circle cx="1080" cy="70" r="2"/>
+    <circle cx="1040" cy="50" r="3"/>
+    <circle cx="1000" cy="100" r="2"/>
+    <circle cx="950" cy="60" r="3"/>
+    <circle cx="900" cy="90" r="2"/>
+    <circle cx="850" cy="40" r="3"/>
+    <circle cx="800" cy="70" r="2"/>
+    <circle cx="760" cy="55" r="3"/>
+    <circle cx="700" cy="95" r="2"/>
+    <circle cx="650" cy="65" r="3"/>
+    <circle cx="600" cy="120" r="2"/>
+    <circle cx="560" cy="80" r="3"/>
+    <circle cx="500" cy="100" r="2"/>
+    <circle cx="450" cy="60" r="3"/>
+    <circle cx="400" cy="90" r="2"/>
+    <circle cx="350" cy="40" r="3"/>
+    <circle cx="300" cy="70" r="2"/>
+    <circle cx="260" cy="55" r="3"/>
+    <circle cx="200" cy="95" r="2"/>
+    <circle cx="150" cy="65" r="3"/>
+    <circle cx="100" cy="120" r="2"/>
   </g>
 
-  <!-- ========== WAVES (cyan/teal) ========== -->
-  <path d="M0 200 Q 300 230 600 200 T 1200 200 V 260 H 0 Z"
-        fill="#0ea5e9" fill-opacity="0.10"
-        style="animation: wave 10s ease-in-out infinite" />
-
-  <path d="M0 215 Q 300 245 600 215 T 1200 215 V 260 H 0 Z"
-        fill="#38bdf8" fill-opacity="0.12"
-        style="animation: wave2 8s ease-in-out infinite" />
-
-  <!-- ========== TEXT ========== -->
-  <text x="60" y="145"
-        font-size="58"
-        font-weight="700"
-        filter="url(#neon-glow)"
-        fill="#67e8f9"
-        font-family="Segoe UI, Ubuntu, Sans-serif">
-      dotsharpfx
+  <!-- Name (Glow Removed) -->
+  <text x="60" y="110"
+        font-size="64"
+        font-family="Segoe UI, sans-serif"
+        fill="#7ef3ff"
+        font-weight="700">
+    dotsharpfx
   </text>
 
-  <text x="60" y="185" class="typing">
-    Senior .NET Engineer • Distributed Systems • Cloud • C#
+  <!-- Subtitle -->
+  <text x="60" y="160"
+        font-size="22"
+        font-family="Segoe UI, sans-serif"
+        fill="#64748b">
+    Senior .NET Engineer • C# • EFCore • Microservices • Cloud
   </text>
+
+  <!-- Waves -->
+  <path d="M0 200 Q300 240 600 200 T1200 200 V260 H0 Z" fill="#0f2a3a"/>
+  <path d="M0 220 Q300 260 600 220 T1200 220 V260 H0 Z" fill="#133449"/>
 
 </svg>
