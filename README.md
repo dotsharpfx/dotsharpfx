@@ -21,6 +21,7 @@ Connect with me:
 
 ## 📢 Latest Hashnode Articles
 <!-- HASHNODE_START -->
+- [C# 12 Features That Actually Matter in Real Projects](https://dotsharpfx.hashnode.dev/c-12-features-that-actually-matter-in-real-projects)
 - [🚀 Event-Driven Excellence: Integrating Kafka with Avro in a .NET Hosted Service](https://dotsharpfx.hashnode.dev/event-driven-excellence-integrating-kafka-with-avro-in-a-net-hosted-service)
 - [🛠️ The Art of State Management: Deciphering the DbContext Lifecycle in EF Core](https://dotsharpfx.hashnode.dev/the-art-of-state-management-deciphering-the-dbcontext-lifecycle-in-ef-core)
 <!-- HASHNODE_END -->
